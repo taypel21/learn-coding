@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wghts@400,500,600,700&display=swap');
+
+*
+body{
+    
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    Margin:5em 15em;
+    background-color: hsl(0, 100%, 74%); 
+    
+
+
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". section"
+    "aside main"
+    "aside2 main";
+    
+
+} 
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: center; 
+    color :white;
+    background-color: hsl(248,32%,49%);
+    margin-bottom: 45px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 10px 2px 2px rgba(0, 0,0,10);
+
+
+
+}
+main {
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    align-content:stretch ;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: 0 8px 2px 2px rgba(0, 0, 0, 10);
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+}
+input[type=text] {
+    
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 10px 15px 10px;
+    border: 1px solid hsl(249,10% ,26%);
+    box-sizing: border box;
+    width: 80%;
+    padding: 15px;
+    font-family: inherit;
+    font-weight: 600;
+
+
+}  
+input[type=email] {
+    max-width: 100%;
+    margin: 10px 10px 15px 10px;
+    border-radius: 8px;
+    border: 1px solid hsl(249,10% ,26%);
+    box-sizing: border-box;
+    width:90%;
+    padding: 15px;
+    font-family: inherit;
+    font-weight: 600;
+
+
+}
+input[type=submit] {
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 2px 0 0 hsl(248, 32% 49%);
+    color: white;
+    border: none;
+    font-variant: small-caps;
+    font-size: 20px; 
+    font-weight: 600;
+    margin: 10px 10px 10px 10px;
+    width: 86%;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+}
+aside {
+    grid-area: aside;
+    font-size: 42px;
+    font-weight: 600; 
+    color: white;
+
+
+} 
+.aside2 { 
+    grid-area: aside2;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: hsl(249,10% ,26%);
+    padding-bottom: 15px;
+}
+.red {
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 1300px) {
+    body { background-image: url(bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+
+    }
+}
+/* moble size screen */
+@media screen and (max-width: 585px) {
+    body {background-image: url(bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+}
+   
+
+    
+
+
+
+
+
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
